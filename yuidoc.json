@@ -1,0 +1,16 @@
+{
+  "name": "yr",
+  "description": "yr: ",
+  "version": "0.1.0",
+  "url": "https://github.com/joelcoxokc/yr",
+  "options": {
+    "outdir": "./docs",
+    "paths": "./lib"
+  },
+  "yr": {
+    "copied": {
+      "path": "/Users/joelcox/dev/temp/slush-wean",
+      "name": "slush-wean"
+    }
+  }
+}
