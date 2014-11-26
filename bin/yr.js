@@ -24,7 +24,8 @@ var program = require('commander'),
     pkg = require('../package.json')
     yr  = require('../lib/generator'),
     gulp = require('gulp'),
-    cargs = require('minimist')(process.argv.slice(3))
+    cargs = require('minimist')(process.argv.slice(3)),
+    projects = require('../lib/projects'),
 require('colors');
 
 /*
@@ -138,7 +139,7 @@ program
 program
   .command('project:create')
   .action(function(){
-    projects.create()
+    projects.create(this.args[1])
   });
 
 /*
